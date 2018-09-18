@@ -28,6 +28,8 @@ body {
     flex-grow: 1;
     border-right: 1px solid white;
     display: flex;
+    flex-flow: column;
+    justify-content: center;
 }
 
 .fb {
