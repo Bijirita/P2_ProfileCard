@@ -20,13 +20,14 @@ body {
 
 .flexn {
     display: flex;
-   
+    /*align-items: center;*/
 }
 
 .box{
     width: 60px;
     flex-grow: 1;
     border-right: 1px solid white;
+    display: flex;
 }
 
 .fb {
@@ -57,4 +58,10 @@ body {
 
 .flexn p {
     display: none;
+}
+
+.icon {
+    
+    margin: 0 auto;
+    
 }
