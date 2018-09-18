@@ -30,6 +30,13 @@ body {
     display: flex;
     flex-flow: column;
     justify-content: center;
+    text-align: center;
+    transition: 1s;
+}
+
+.fb, .yt, .twitter, .github, .homepg {
+    transition: background-color 1s ease;
+    background-color: pink;
 }
 
 .fab,
@@ -48,6 +55,10 @@ body {
 
 /*-----Hovers-----*/
 
+.box:hover p{
+    display: flex;
+}
+
 .box:hover .fab {
     font-size: 100px;
 }
@@ -57,7 +68,7 @@ body {
 }
 
 .fb:hover {
-    background: linear-gradient(to top, #0042cf, #4c6dff);
+    background-color: blue;
 }
 
 .twitter:hover {
