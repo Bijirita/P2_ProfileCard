@@ -7,10 +7,10 @@ body {
     grid-template-columns: 70% 30%;
     height: 400px;
     width: 1000px;
-    background: gray;
+    background: #ffc9efb2;
     color: white;
     margin: 10vw 10vw;
-    border: 3px solid purple;
+    border: 2px solid white;
     border-radius: 5px;
     box-shadow: 5px 5px rgba(0, 0, 0, .2);
 }
