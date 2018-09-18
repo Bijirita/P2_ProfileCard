@@ -32,6 +32,30 @@ body {
     justify-content: center;
 }
 
+.fab,
+.fas  {
+    color: white;
+    font-size: 50px;
+}
+
+.flexn p {
+    display: none;
+}
+
+.icon {
+    margin: 0 auto;
+}
+
+/*-----Hovers-----*/
+
+.box:hover .fab {
+    font-size: 100px;
+}
+
+.box:hover .fas {
+    font-size: 100px;
+}
+
 .fb:hover {
     background: linear-gradient(to top, #0042cf, #4c6dff);
 }
@@ -48,20 +72,7 @@ body {
     background: linear-gradient(to top, #1a1919, #3f3f3f);
 }
 
-.homepg {
-    /*background: pink;*/
+.homepg:hover {
+    background: linear-gradient(to top, #ff93a5, #ffc9d2);
 }
 
-.fab,
-.fas  {
-    color: white;
-    font-size: 50px;
-}
-
-.flexn p {
-    display: none;
-}
-
-.icon {
-    margin: 0 auto;
-}
