@@ -44,8 +44,8 @@ body {
     background: linear-gradient(to top, #cc0000, #ff4141);
 }
 
-.github {
-    background: linear-gradient(to top #000000, #242424);
+.github:hover {
+    background: linear-gradient(to top, #1a1919, #3f3f3f);
 }
 
 .homepg {
