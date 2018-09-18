@@ -28,26 +28,30 @@ body {
 }
 
 .fb {
-    background: blue;
+    /*background: blue;*/
 }
 
 .twitter {
-    background: lightblue;
+    /*background: lightblue;*/
 }
 
 .yt {
-    background: red;
+    /*background: red;*/
 }
 
 .git {
-    background: black;
+    /*background: black;*/
 }
 
 .homepg {
-    background: pink;
+    /*background: pink;*/
 }
 
-.fab fa-youtube-square{
+.fab,
+.fas  {
     color: white;
-    text-decoration: none;
+}
+
+p {
+    display: hidden;
 }
