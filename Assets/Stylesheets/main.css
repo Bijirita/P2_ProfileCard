@@ -20,11 +20,13 @@ body {
 
 .flexn {
     display: flex;
+   
 }
 
 .box{
     width: 60px;
     flex-grow: 1;
+    border-right: 1px solid white;
 }
 
 .fb {
@@ -50,8 +52,9 @@ body {
 .fab,
 .fas  {
     color: white;
+    font-size: 50px;
 }
 
-p {
-    display: hidden;
+.flexn p {
+    display: none;
 }
