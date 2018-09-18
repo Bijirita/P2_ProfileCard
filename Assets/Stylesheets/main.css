@@ -32,20 +32,20 @@ body {
     justify-content: center;
 }
 
-.fb {
-    /*background: blue;*/
+.fb:hover {
+    background: linear-gradient(to top, #0042cf, #4c6dff);
 }
 
-.twitter {
-    /*background: lightblue;*/
+.twitter:hover {
+    background: linear-gradient(to top, #2bb1ff, #86d3ff);
 }
 
-.yt {
-    /*background: red;*/
+.yt:hover {
+    background: linear-gradient(to top, #cc0000, #ff4141);
 }
 
-.git {
-    /*background: black;*/
+.github {
+    background: linear-gradient(to top #000000, #242424);
 }
 
 .homepg {
@@ -63,7 +63,5 @@ body {
 }
 
 .icon {
-    
     margin: 0 auto;
-    
 }
