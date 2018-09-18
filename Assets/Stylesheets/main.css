@@ -1,0 +1,47 @@
+body {
+    background-image: linear-gradient(to left, #ffb399 30%, lavender, #ffe699);
+}
+
+.profilecard {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    height: 500px;
+    background: gray;
+    color: white;
+    margin: 10vw 10vw;
+    border: 3px solid purple;
+    border-radius: 5px;
+    box-shadow: 5px 5px rgba(0, 0, 0, .2);
+}
+.profilecard>:last-child{
+    background: green;
+}
+
+.flexn {
+    display: flex;
+}
+
+.box{
+    height: 100%;
+    width: 20%;
+}
+
+.fb {
+    background: blue;
+}
+
+.twitter {
+    background: lightblue;
+}
+
+.yt {
+    background: red;
+}
+
+.git {
+    background: black;
+}
+
+.homepg {
+    background: pink;
+}
