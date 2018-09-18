@@ -4,8 +4,8 @@ body {
 
 .profilecard {
     display: grid;
-    grid-template-columns: 60% 40%;
-    height: 500px;
+    grid-template-columns: 70% 30%;
+    height: 300px;
     background: gray;
     color: white;
     margin: 10vw 10vw;
@@ -19,11 +19,12 @@ body {
 
 .flexn {
     display: flex;
+    flex: 
 }
 
 .box{
     height: 100%;
-    width: 20%;
+    flex-grow: 1;
 }
 
 .fb {
