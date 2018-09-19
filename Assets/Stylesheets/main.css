@@ -78,12 +78,16 @@ body {
         flex-wrap: wrap;*/
         display: inline-block;
         border-bottom: 1px solid white;
+        
     }
     
 }
 
 .fb img {
     height: 40px;
+    display: none;
+    border: 2px solid grey;
+    border-radius: 50%;
 }
 
 .charlerae img{
@@ -128,9 +132,19 @@ body {
 
 .box:hover p{
     display: flex;
+    
 }
 
+
 .box:hover .fab {
+    display: none;
+    /*animation-name: alternating;
+    animation-direction: alternate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;*/
+}
+.fb:hover img {
+    display: block;
     animation-name: alternating;
     animation-direction: alternate;
     animation-duration: 1s;
