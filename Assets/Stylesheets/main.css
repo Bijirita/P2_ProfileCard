@@ -82,6 +82,10 @@ body {
     
 }
 
+.fb img {
+    height: 40px;
+}
+
 .charlerae img{
     height: 100px;
     display: block;
@@ -114,7 +118,6 @@ body {
     color: white;
     font-size: 50px;
     transition: .75s ease-in-out;
-    position: absolute;
 }
 
 .icon {
