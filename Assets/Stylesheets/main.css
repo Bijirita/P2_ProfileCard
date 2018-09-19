@@ -3,15 +3,6 @@
     to {font-size: 100px;}
 }
 
-@media (max-width: 800px) {
-    .profilecard{
-        grid-template-rows: 70% 30%;
-        height: 900px;
-        width: 320px;
-    }
-
-    
-}
 
 body {
     background-image: linear-gradient(to left, #ffb399 30%, lavender, #ffe699);
@@ -24,7 +15,7 @@ body {
     width: 900px;
     background: #ffc9efb2;
     color: white;
-    margin: 10vw 10vw;
+    margin: 4vw;
     border: 2px solid white;
     border-radius: 5px;
     box-shadow: 5px 5px rgba(0, 0, 0, .2);
@@ -32,6 +23,8 @@ body {
 .profilecard>:last-child{
     background: green;
 }
+
+
 
 .flexn {
     display: flex;
@@ -51,6 +44,26 @@ body {
     border-radius: 2px;
 }
 
+.charlerae {
+    display: grid;
+}
+/*@media (max-width: 1800px) {
+    .profilecard {
+        grid-template-rows: 70% 30%;
+        grid-template-columns: none;
+        height: 900px;
+        width: 320px;
+    }
+    .box {
+        position: absolute;
+        width: 304px;
+        height: 60px;
+        flex-flow: row;
+        flex-wrap: wrap;
+        display: flex;
+    }*/
+    
+}
 .fb, .yt, .twitter, .github, .homepg {
     background-color: pink;
     transition: .75s ease-in-out;
@@ -67,7 +80,7 @@ body {
 
 .box p {
     display: none;
-    margin: 30px 33% 0 33%;
+    margin: 0 auto;
     transition: .75s ease-in-out;
 }
 
