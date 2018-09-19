@@ -78,6 +78,27 @@ body {
     }
     
 }
+
+.charlerae img{
+    height: 50px;
+    display: block;
+    margin-top: 50%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 950px) {
+    .charlerae {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+        .charlerae img {
+        margin-top: 0;
+        margin-left: 0;
+        transform: translateX(0);
+        }
+    }   
 .fb, .yt, .twitter, .github, .homepg {
     background-color: pink;
     transition: .75s ease-in-out;
