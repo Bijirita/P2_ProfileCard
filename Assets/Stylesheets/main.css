@@ -158,32 +158,33 @@ body {
     animation-iteration-count: infinite;
 }
 
+
+
 .fb:hover {
     background-color: blue;
-    width: 300px;
 }
 
 .twitter:hover {
     /*background: linear-gradient(to top, #2bb1ff, #86d3ff);*/
     background-color: #2bb1ff;
-    width: 300px;
 }
 
 .yt:hover {
     /*background: linear-gradient(to top, #cc0000, #ff4141);*/
     background-color:  #cc0000;
-    width: 300px;
 }
 
 .github:hover {
     /*background: linear-gradient(to top, #1a1919, #3f3f3f);*/
     background-color: #1a1919;
-    width: 300px;
 }
 .homepg:hover {
     /*background: linear-gradient(to top, #ff93a5, #ffc9d2);*/
     background-color: #ff93a5;
-    width: 300px;
+}
+
+.box:hover {
+    width: 270px;
 }
 
 .charlerae img {
