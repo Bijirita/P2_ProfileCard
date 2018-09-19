@@ -28,6 +28,7 @@ body {
 
 .flexn {
     display: flex;
+    flex-wrap: wrap;
     /*flex-direction: column;*/
     
     /*align-items: center;*/
@@ -45,9 +46,9 @@ body {
 }
 
 .charlerae {
-    display: grid;
+    position: absolute;
 }
-/*@media (max-width: 1800px) {
+@media (max-width: 1800px) {
     .profilecard {
         grid-template-rows: 70% 30%;
         grid-template-columns: none;
@@ -55,13 +56,13 @@ body {
         width: 320px;
     }
     .box {
-        position: absolute;
+        /*position: absolute;*/
         width: 304px;
         height: 60px;
         flex-flow: row;
         flex-wrap: wrap;
         display: flex;
-    }*/
+    }
     
 }
 .fb, .yt, .twitter, .github, .homepg {
