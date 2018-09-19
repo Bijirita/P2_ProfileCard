@@ -80,11 +80,13 @@ body {
 }
 
 .charlerae img{
-    height: 50px;
+    height: 100px;
     display: block;
-    margin-top: 50%;
+    margin-top: 40%;
     margin-left: 50%;
     transform: translateX(-50%);
+    border-radius: 50%;
+    box-shadow: 5px 5px rgba(0, 0, 0, .1);
 }
 
 @media (max-width: 950px) {
@@ -118,7 +120,7 @@ body {
 /*-----Hovers-----*/
 
 .box:hover p{
-    display: none;
+    display: flex;
 }
 
 .box:hover .fab {
