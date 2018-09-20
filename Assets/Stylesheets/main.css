@@ -1,12 +1,20 @@
 @keyframes alternating {
-    from {opacity: 50px;}
-    /*to {font-size: 100px;}*/
-    to {transform: scale(1.4);}
+    from {transform: 60px;}
+    
+    to {transform: scale(1.5);}
 }
 
-@keyframes text {
-    from {opacity: 0;}
-    to {opacity: 1;}
+@keyframes slideup {
+    from {transform: translateY(0px);}
+    
+    to {transform: translateY(-100px);}
+    
+}
+
+@keyframes minimize {
+    from {transform: 60px;}
+    
+    to {transform: scale(0.001);}
 }
 
 body {
@@ -159,6 +167,7 @@ body {
     transition: .75s ease-in-out;
     position: absolute;
     text-decoration: none;
+    z-index: 0;
 }
 
 /*------------------------------------Hovers-------------------------------------*/
@@ -175,8 +184,8 @@ body {
 }
 
 .box:hover .fab {
-    display: none;
-    /*animation: alternating 1s ease alternate infinite;*/
+    
+    animation: slideup .5s forwards ease, minimize 1s ease;
 }
 
 .box:hover .fas {
