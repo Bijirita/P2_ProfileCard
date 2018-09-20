@@ -1,6 +1,6 @@
 @keyframes march {
     from {left: 0%}
-    to {left: 100%}
+    to {left: 50%}
 }
 
 @keyframes alternating { 
@@ -34,7 +34,8 @@ body {
 }
 
 .profilecard {
-    /* overflow: hidden; */
+    overflow: hidden;
+    position: relative;
     display: grid;
     grid-template-columns: 70% 30%;
     height: 320px;
@@ -49,14 +50,15 @@ body {
 
 .profilecard>:last-child{
     background-image: url("../Images/neko.jpg");
-    background-size: 270px 320px;
-    background-repeat: repeat;
+    background-size: 270px 100%;
+    background-repeat: repeat-x;
 }
 
 .flexn {
     display: flex;
     flex-wrap: wrap;
-    
+    z-index: 1;
+    position: relative;
     /*flex-direction: column;*/
     
     /*align-items: center;*/
@@ -96,10 +98,13 @@ body {
     font-family: "Gamja Flower", cursive, Helvetica;
     font-size: 50px;
     display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .profilecard>:last-child {
-    animation: march 50s linear infinite;
+    animation: march 2s linear infinite;
     /* animation-direction: reverse; */
 }
 
