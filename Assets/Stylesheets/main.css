@@ -4,17 +4,22 @@
     to {transform: scale(1.5);}
 }
 
+@keyframes reveal {
+    0% {opacity: 0;}
+
+    100% {opacity: 1;}
+}
+
 @keyframes slideup {
      0% {transform: translateY(0px) scale(1);}
 
     100% {transform: translateY(-100px) scale(.001);}
-    
 }
 
 @keyframes minimize {
-    from {transform: scale(1);}
+    0% {transform: scale(1);}
     
-    to {transform: scale(0.001);}
+    100% {transform: scale(0.001);}
 }
 
 body {
@@ -50,7 +55,7 @@ body {
     /*align-items: center;*/
 }
 
-.box{
+.box {
     width: 60px;
     flex-grow: 1;
     border-right: 1px solid white;
@@ -65,10 +70,8 @@ body {
 .box p {
     opacity: 0;
     margin: 0 auto;
-    transition: .75s ease-in-out;
     font-size: 20px;
     font-family: "Gamja Flower", cursive, Helvetica;
-    animation-delay: 1s; 
 }
 
 .box img {
@@ -88,13 +91,16 @@ body {
 
 .charlerae p {
      display: inline-block;
-     
+     text-align: center;
+     margin: 0 0 0 50%;
+     transform: translateX(-50%);
+
 }
 
 .charlerae img{
     height: 100px;
     display: block;
-    margin-top: 40%;
+    margin-top: 10%;
     margin-left: 50%;
     transform: translateX(-50%);
     border-radius: 50%;
@@ -147,57 +153,51 @@ body {
 
 .fb img, .twitter img, .yt img, .github img, .homepg img {
     height: 60px;
-    display: none;
+    display: inline-block;
     position: absolute;
-    margin:  -90px 0 0 -30px;
+    margin: -100px 0 0 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 1s .75s;
 }
-
-/*.fab, .fas  {
-    color: white;
-    font-size: 50px;
-    transition: .75s ease-in-out;
-    position: absolute;
-}*/
 
 .icon {
     display: flex;
-    align-items: center;
     color: white;
     font-size: 60px;
-    transition: .75s ease-in-out;
     position: absolute;
     text-decoration: none;
-    z-index: 0;
 }
 
 /*------------------------------------Hovers-------------------------------------*/
 
 .box:hover {
+    transition: .75s ease;
     width: 250px;
 }
 
 .box:hover p {
-    /*display: flex;*/
     opacity: 1;
     transition: .75s linear;
     transition-delay: .75s;
 }
 
+.box:hover img {
+    opacity: 1;
+    margin: -100px 0 0 -10%;
+    animation: minimize 2s 1s forwards ease;
+}
+
 .box:hover .fab {
     
-    animation: slideup 3s forwards ease;
+    animation: slideup .75s forwards ease;
 }
 
 .box:hover .fas {
-    display: none;
-}
-
-.box:hover .fas {
-    animation: alternating 1s ease alternate infinite;
+    animation: slideup .75s forwards ease;
 }
 
 .fb:hover img {
-    display: block;
     animation: alternating 1s ease alternate infinite;
 }
 
