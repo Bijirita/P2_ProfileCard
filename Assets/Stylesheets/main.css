@@ -1,7 +1,12 @@
 @keyframes alternating {
-    from {font-size: 50px;}
+    from {opacity: 50px;}
     /*to {font-size: 100px;}*/
     to {transform: scale(1.4);}
+}
+
+@keyframes text {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 
 body {
@@ -50,7 +55,7 @@ body {
 }
 
 .box p {
-    display: none;
+    opacity: 0;
     margin: 0 auto;
     transition: .75s ease-in-out;
     font-size: 20px;
@@ -139,20 +144,21 @@ body {
     margin:  -90px 0 0 -30px;
 }
 
-.fab, .fas  {
-    /*color: white;
+/*.fab, .fas  {
+    color: white;
     font-size: 50px;
     transition: .75s ease-in-out;
-    position: absolute;*/
-}
+    position: absolute;
+}*/
 
 .icon {
     display: flex;
     align-items: center;
     color: white;
-    font-size: 50px;
+    font-size: 60px;
     transition: .75s ease-in-out;
-    position: relative;
+    position: absolute;
+    text-decoration: none;
 }
 
 /*------------------------------------Hovers-------------------------------------*/
@@ -162,8 +168,10 @@ body {
 }
 
 .box:hover p {
-    display: flex;
-    
+    /*display: flex;*/
+    opacity: 1;
+    transition: .75s linear;
+    transition-delay: .75s;
 }
 
 .box:hover .fab {
