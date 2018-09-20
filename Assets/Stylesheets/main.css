@@ -4,7 +4,6 @@
     to {transform: scale(1.4);}
 }
 
-
 body {
     background-image: linear-gradient(to left, #ffb399 30%, lavender, #ffe699);
     -webkit-font-smoothing: antialiased;
@@ -23,11 +22,10 @@ body {
     border-radius: 5px;
     box-shadow: 5px 5px rgba(0, 0, 0, .2);
 }
+
 .profilecard>:last-child{
     background: green;
 }
-
-
 
 .flexn {
     display: flex;
@@ -57,9 +55,31 @@ body {
     font-family: "Gamja Flower", cursive, Helvetica; 
 }
 
+.box img {
+    border-radius: 30%;
+}
 .charlerae {
     position: relative;
+    font-family: "Gamja Flower", cursive, Helvetica;
+    font-size: 50px;
+    display: inline-block;
 }
+
+charlerae p {
+     display: inline-block;
+     
+}
+
+.charlerae img{
+    height: 100px;
+    display: block;
+    margin-top: 40%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    box-shadow: 5px 5px rgba(0, 0, 0, .1);
+}
+
 @media (max-width: 950px) {
     .profilecard {
         grid-template-rows: 70% 30%;
@@ -83,42 +103,40 @@ body {
     
 }
 
-.fb img {
-    height: 40px;
-    display: none;
-    border: 2px solid grey;
-    border-radius: 50%;
-}
-
-.charlerae img{
-    height: 100px;
-    display: block;
-    margin-top: 40%;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    border-radius: 50%;
-    box-shadow: 5px 5px rgba(0, 0, 0, .1);
-}
-
 @media (max-width: 950px) {
     .charlerae {
         display: flex;
         align-items: center;
         justify-content: center;
     }
-        .charlerae img {
+    .charlerae img {
         margin-top: 0;
         margin-left: 0;
         transform: translateX(0);
-        }
-    }   
+    }
+}   
+
+.fb img {
+        height: 40px;
+        display: none;
+        /*border: 2px solid grey;*/
+        border-radius: 50%;
+    }
+    
 .fb, .yt, .twitter, .github, .homepg {
     background-color: pink;
     transition: .75s ease-in-out;
 }
 
-.fab,
-.fas  {
+.fb img, .twitter img, .yt img, .github img, .homepg img {
+    height: 60px;
+    display: none;
+    /*border: 2px solid grey;
+    border-radius: 50%;*/
+    padding-bottom: 10px;
+}
+
+.fab, .fas  {
     color: white;
     font-size: 50px;
     transition: .75s ease-in-out;
@@ -128,37 +146,34 @@ body {
     margin: 0 auto;
 }
 
-/*-----Hovers-----*/
+/*------------------------------------Hovers-------------------------------------*/
 
-.box:hover p{
+.box:hover {
+    width: 250px;
+}
+
+.box:hover p {
     display: flex;
     
 }
 
-
 .box:hover .fab {
     display: none;
-    /*animation-name: alternating;
-    animation-direction: alternate;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;*/
-}
-.fb:hover img {
-    display: block;
-    animation-name: alternating;
-    animation-direction: alternate;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
+    /*animation: alternating 1s ease alternate infinite;*/
 }
 
 .box:hover .fas {
-    animation-name: alternating;
-    animation-direction: alternate;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
+    display: none;
 }
 
+.box:hover .fas {
+    animation: alternating 1s ease alternate infinite;
+}
 
+.fb:hover img {
+    display: block;
+    animation: alternating 1s ease alternate infinite;
+}
 
 .fb:hover {
     background-color: blue;
@@ -169,27 +184,45 @@ body {
     background-color: #2bb1ff;
 }
 
+.twitter:hover img {
+    display: block;
+    animation: alternating 1s ease alternate infinite;
+}
+
 .yt:hover {
     /*background: linear-gradient(to top, #cc0000, #ff4141);*/
     background-color:  #cc0000;
+}
+
+.yt:hover img {
+    display: block;
+    animation: alternating 1s ease alternate infinite;
 }
 
 .github:hover {
     /*background: linear-gradient(to top, #1a1919, #3f3f3f);*/
     background-color: #1a1919;
 }
+
+.github:hover img {
+    display: block;
+    animation: alternating 1s ease alternate infinite;
+}
+
 .homepg:hover {
     /*background: linear-gradient(to top, #ff93a5, #ffc9d2);*/
     background-color: #ff93a5;
 }
 
-.box:hover {
-    width: 270px;
-}
-
-.charlerae img {
+.homepg:hover img {
+    display: block;
     animation: alternating 1s ease alternate infinite;
 }
+
+.charlerae:hover img {
+    animation: alternating 1s ease alternate infinite;
+}
+
 @media (max-width: 950px) {
     .box:hover{
         height: 200px;
