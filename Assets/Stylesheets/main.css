@@ -1,3 +1,8 @@
+@keyframes march {
+    from {left: 0%}
+    to {left: 100%}
+}
+
 @keyframes alternating { 
     0% {transform: scale(1);}
     
@@ -43,7 +48,9 @@ body {
 }
 
 .profilecard>:last-child{
-    background: green;
+    background-image: url("../Images/neko.jpg");
+    background-size: 100% 320px;
+    background-repeat: repeat;
 }
 
 .flexn {
@@ -87,6 +94,11 @@ body {
     font-family: "Gamja Flower", cursive, Helvetica;
     font-size: 50px;
     display: inline-block;
+    background-image: url("../Images/neko.jpg");
+}
+
+.charlerae img {
+    animation: march 50s linear infinite;
 }
 
 .charlerae p {
@@ -94,7 +106,9 @@ body {
      text-align: center;
      margin: 0 0 0 50%;
      transform: translateX(-50%);
-
+     color: black;
+     background: rgba(255, 255, 255, .4);
+     opacity: 0;
 }
 
 .charlerae img{
@@ -104,7 +118,9 @@ body {
     margin-left: 50%;
     transform: translateX(-50%);
     border-radius: 50%;
+    border: 2px solid black;
     box-shadow: 5px 5px rgba(0, 0, 0, .1);
+    opacity: 0;
 }
 
 @media (max-width: 950px) {
