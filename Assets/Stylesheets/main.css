@@ -1,18 +1,18 @@
 @keyframes alternating {
-    from {transform: 60px;}
+    from {transform: scale(1);}
     
     to {transform: scale(1.5);}
 }
 
 @keyframes slideup {
-    from {transform: translateY(0px);}
-    
-    to {transform: translateY(-100px);}
+     0% {transform: translateY(0px) scale(1);}
+
+    100% {transform: translateY(-100px) scale(.001);}
     
 }
 
 @keyframes minimize {
-    from {transform: 60px;}
+    from {transform: scale(1);}
     
     to {transform: scale(0.001);}
 }
@@ -185,7 +185,7 @@ body {
 
 .box:hover .fab {
     
-    animation: slideup .5s forwards ease, minimize 1s ease;
+    animation: slideup 3s forwards ease;
 }
 
 .box:hover .fas {
