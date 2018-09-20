@@ -1,7 +1,7 @@
-@keyframes alternating {
-    from {transform: scale(1);}
+@keyframes alternating { 
+    0% {transform: scale(1);}
     
-    to {transform: scale(1.5);}
+    100% {transform: scale(1.75);}
 }
 
 @keyframes reveal {
@@ -16,10 +16,10 @@
     100% {transform: translateY(-100px) scale(.001);}
 }
 
-@keyframes minimize {
-    0% {transform: scale(1);}
+@keyframes maximize {
+    0% {transform: scale(.001);}
     
-    100% {transform: scale(0.001);}
+    100% {transform: scale(1);}
 }
 
 body {
@@ -179,7 +179,6 @@ body {
 .box:hover p {
     opacity: 1;
     transition: .75s linear;
-    transition-delay: .75s;
 }
 
 .box:hover img {
@@ -198,7 +197,7 @@ body {
 }
 
 .fb:hover img {
-    animation: alternating 1s ease alternate infinite;
+    animation: maximize 1s .75s ease, alternating .75s 1.5s ease alternate infinite;
 }
 
 .fb:hover {
@@ -212,7 +211,7 @@ body {
 
 .twitter:hover img {
     display: block;
-    animation: alternating 1s ease alternate infinite;
+    animation: maximize 1s .75s ease, alternating .75s 1.5s ease alternate infinite;
 }
 
 .yt:hover {
@@ -222,7 +221,7 @@ body {
 
 .yt:hover img {
     display: block;
-    animation: alternating 1s ease alternate infinite;
+    animation: maximize 1s .75s ease, alternating .75s 1.5s ease alternate infinite;
 }
 
 .github:hover {
@@ -232,7 +231,7 @@ body {
 
 .github:hover img {
     display: block;
-    animation: alternating 1s ease alternate infinite;
+    animation: maximize 1s .75s ease, alternating .75s 1.5s ease alternate infinite;
 }
 
 .homepg:hover {
@@ -242,11 +241,11 @@ body {
 
 .homepg:hover img {
     display: block;
-    animation: alternating 1s ease alternate infinite;
+    animation: maximize 1s .75s ease, alternating .75s 1.5s ease alternate infinite;
 }
 
 .charlerae:hover img {
-    animation: alternating 1s ease alternate infinite;
+    animation: maximize 1s .75s ease, alternating .75s 1.5s ease alternate infinite;
 }
 
 @media (max-width: 950px) {
