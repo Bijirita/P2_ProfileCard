@@ -98,9 +98,7 @@ charlerae p {
         flex-wrap: wrap;*/
         display: inline-block;
         border-bottom: 1px solid white;
-        
     }
-    
 }
 
 @media (max-width: 950px) {
@@ -116,11 +114,9 @@ charlerae p {
     }
 }   
 
-.fb img {
+.yt img {
         height: 40px;
         display: none;
-        /*border: 2px solid grey;*/
-        border-radius: 50%;
     }
     
 .fb, .yt, .twitter, .github, .homepg {
@@ -133,7 +129,7 @@ charlerae p {
     display: none;
     /*border: 2px solid grey;
     border-radius: 50%;*/
-    padding-bottom: 10px;
+    position: absolute;
 }
 
 .fab, .fas  {
