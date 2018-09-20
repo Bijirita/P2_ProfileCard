@@ -31,10 +31,10 @@ body {
     background-image: linear-gradient(to left, #ffb399 30%, lavender, #ffe699);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    overflow: hidden;
 }
 
 .profilecard {
+    /* overflow: hidden; */
     display: grid;
     grid-template-columns: 70% 30%;
     height: 320px;
@@ -49,7 +49,7 @@ body {
 
 .profilecard>:last-child{
     background-image: url("../Images/neko.jpg");
-    background-size: 100% 320px;
+    background-size: 270px 320px;
     background-repeat: repeat;
 }
 
@@ -90,15 +90,17 @@ body {
 }
 
 .charlerae {
+    height: 320px;
+    width: 1350px;
     position: relative;
     font-family: "Gamja Flower", cursive, Helvetica;
     font-size: 50px;
     display: inline-block;
-    background-image: url("../Images/neko.jpg");
 }
 
-.charlerae img {
+.profilecard>:last-child {
     animation: march 50s linear infinite;
+    /* animation-direction: reverse; */
 }
 
 .charlerae p {
