@@ -8,6 +8,7 @@ body {
     background-image: linear-gradient(to left, #ffb399 30%, lavender, #ffe699);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
 }
 
 .profilecard {
@@ -127,9 +128,8 @@ charlerae p {
 .fb img, .twitter img, .yt img, .github img, .homepg img {
     height: 60px;
     display: none;
-    /*border: 2px solid grey;
-    border-radius: 50%;*/
     position: absolute;
+    margin:  -90px 0 0 -30px;
 }
 
 .fab, .fas  {
