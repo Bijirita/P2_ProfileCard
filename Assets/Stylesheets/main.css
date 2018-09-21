@@ -94,17 +94,19 @@ body {
 .charlerae {
     height: 320px;
     width: 1350px;
-    position: relative;
     font-family: "Gamja Flower", cursive, Helvetica;
     font-size: 50px;
     display: inline-block;
     position: absolute;
     top: 0;
     right: 0;
+    animation: march 20s linear infinite;
+    background-image: url("../Images/neko.jpg");
+    background-size: 270px 100%;
 }
 
 .profilecard>:last-child {
-    animation: march 2s linear infinite;
+    
     /* animation-direction: reverse; */
 }
 
@@ -118,16 +120,14 @@ body {
      opacity: 0;
 }
 
-.charlerae img{
+.cri img{
     height: 100px;
-    display: block;
-    margin-top: 10%;
-    margin-left: 50%;
-    transform: translateX(-50%);
+    margin: 50px 10% 10% 10%;
     border-radius: 50%;
     border: 2px solid black;
     box-shadow: 5px 5px rgba(0, 0, 0, .1);
-    opacity: 0;
+    position: absolute;
+    opacity: 1;
 }
 
 @media (max-width: 950px) {
@@ -267,7 +267,8 @@ body {
     animation: maximize 1s .75s ease, alternating .75s 1.5s ease alternate infinite;
 }
 
-.charlerae:hover img {
+.charlerae:hover ~ .cri img {
+    opacity: 1;
     animation: maximize 1s .75s ease, alternating .75s 1.5s ease alternate infinite;
 }
 
