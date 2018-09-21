@@ -1,3 +1,5 @@
+/*=====================================KeyFrames (@media at the bottom)========================*/
+
 @keyframes march {
     from {left: 0%}
     to {left: 50%}
@@ -26,6 +28,8 @@
     
     100% {transform: scale(1);}
 }
+
+/*=====================================Body========================*/
 
 body {
     background-image: linear-gradient(to left, #ffb399 30%, lavender, #ffe699);
@@ -59,9 +63,6 @@ body {
     flex-wrap: wrap;
     z-index: 1;
     position: relative;
-    /*flex-direction: column;*/
-    
-    /*align-items: center;*/
 }
 
 .box {
@@ -105,11 +106,6 @@ body {
     background-size: 270px 100%;
 }
 
-.profilecard>:last-child {
-    
-    /* animation-direction: reverse; */
-}
-
 .charlerae p {
      display: inline-block;
      text-align: center;
@@ -130,39 +126,7 @@ body {
     opacity: 1;
 }
 
-@media (max-width: 950px) {
-    .profilecard {
-        grid-template-rows: 70% 30%;
-        grid-template-columns: none;
-        height: 900px;
-        width: 320px;
-    }
-    .flexn {
-        display: block;
-    }
-    .box {
-        position: relative;
-        width: 100%;
-        height: 20%;
-        /*(flex-flow: row;
-        flex-wrap: wrap;*/
-        display: inline-block;
-        border-bottom: 1px solid white;
-    }
-}
-
-@media (max-width: 950px) {
-    .charlerae {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .charlerae img {
-        margin-top: 0;
-        margin-left: 0;
-        transform: translateX(0);
-    }
-}   
+  
 
 .yt img {
         height: 40px;
@@ -257,7 +221,7 @@ body {
     animation: maximize 1s .75s ease, alternating .75s 1.5s ease alternate infinite;
 }
 
-.homepg:hover {
+.homepg:hover {  
     /*background: linear-gradient(to top, #ff93a5, #ffc9d2);*/
     background-color: #ff93a5;
 }
@@ -271,6 +235,39 @@ body {
     opacity: 1;
     animation: maximize 1s .75s ease, alternating .75s 1.5s ease alternate infinite;
 }
+
+/*------------------------------------@media-------------------------------------*/
+
+@media (max-width: 950px) {
+    .profilecard {
+        grid-template-rows: 70% 30%;
+        grid-template-columns: none;
+        height: 900px;
+        width: 320px;
+    }
+    .flexn {
+        display: block;
+    }
+    .box {
+        position: relative;
+        width: 100%;
+        height: 20%;
+        border-bottom: 1px solid white;
+    }
+}
+
+@media (max-width: 950px) {
+    .charlerae {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .charlerae img {
+        margin-top: 0;
+        margin-left: 0;
+        transform: translateX(0);
+    }
+} 
 
 @media (max-width: 950px) {
     .box:hover{
