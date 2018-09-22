@@ -38,7 +38,7 @@ body {
 }
 
 .profilecard {
-    /* overflow: hidden; */
+    overflow: hidden;
     position: relative;
     display: grid;
     grid-template-columns: 70% 30%;
@@ -60,7 +60,6 @@ body {
 
 .flexn {
     display: flex;
-    z-index: 1;
     position: relative;
 }
 
@@ -93,7 +92,6 @@ body {
 .charlerae {
     font-family: "Gamja Flower", cursive, Helvetica;
     font-size: 50px;
-    position: absolute;
     top: 0;
     right: 0;
 }
@@ -239,7 +237,9 @@ body {
         display: flex;
     }
     .box {
-        width: 60px;
+        position: relative; 
+        width: 100px;
+        flex-wrap: wrap;
         flex-grow: 1;
         border-bottom: 1px solid white;
     }
