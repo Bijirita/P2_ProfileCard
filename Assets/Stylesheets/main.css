@@ -38,7 +38,7 @@ body {
 }
 
 .profilecard {
-    overflow: hidden;
+    /* overflow: hidden; */
     position: relative;
     display: grid;
     grid-template-columns: 70% 30%;
@@ -55,12 +55,11 @@ body {
 .profilecard>:last-child{
     background: url("../Images/neko.jpg");
     background-size: 270px 100%;
-    animation: marches 20s linear infinite;
+    animation: marches 15s linear infinite;
 }
 
 .flexn {
     display: flex;
-    flex-wrap: wrap;
     z-index: 1;
     position: relative;
 }
@@ -70,7 +69,6 @@ body {
     flex-grow: 1;
     border-right: 1px solid white;
     display: flex;
-    flex-flow: column;
     justify-content: center;
     text-align: center;
     border-radius: 2px;
@@ -93,11 +91,8 @@ body {
 }
 
 .charlerae {
-    height: 320px;
-    width: 1350px;
     font-family: "Gamja Flower", cursive, Helvetica;
     font-size: 50px;
-    display: inline-block;
     position: absolute;
     top: 0;
     right: 0;
@@ -122,8 +117,6 @@ body {
     position: absolute;
     opacity: 1;
 }
-
-  
 
 .yt img {
         height: 40px;
@@ -243,19 +236,18 @@ body {
         width: 320px;
     }
     .flexn {
-        display: block;
+        display: flex;
     }
     .box {
-        position: relative;
-        width: 100%;
-        height: 20%;
+        width: 60px;
+        flex-grow: 1;
         border-bottom: 1px solid white;
     }
 }
-
+/*
 @media (max-width: 950px) {
     .charlerae {
-        display: flex;
+        display: inline-block;
         align-items: center;
         justify-content: center;
     }
@@ -275,4 +267,4 @@ body {
         display: inline-block;
         margin: 100px 0 0 0;
     }
-}
+}*/
