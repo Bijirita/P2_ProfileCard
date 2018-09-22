@@ -1,8 +1,8 @@
 /*=====================================KeyFrames (@media at the bottom)========================*/
 
-@keyframes march {
-    from {left: 0%}
-    to {left: 50%}
+@keyframes marches{
+    from { background-position: 0px;}
+    to {background-position: 320px;}
 }
 
 @keyframes alternating { 
@@ -53,9 +53,9 @@ body {
 }
 
 .profilecard>:last-child{
-    background-image: url("../Images/neko.jpg");
+    background: url("../Images/neko.jpg");
     background-size: 270px 100%;
-    background-repeat: repeat-x;
+    animation: marches 20s linear infinite;
 }
 
 .flexn {
@@ -101,9 +101,6 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    animation: march 20s linear infinite;
-    background-image: url("../Images/neko.jpg");
-    background-size: 270px 100%;
 }
 
 .charlerae p {
