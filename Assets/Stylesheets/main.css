@@ -42,7 +42,7 @@ body {
     grid-template-columns: 70% 30%;
     height: 320px;
     width: 900px;
-    background: #ffc9efb2;
+    background: pink;
     color: white;
     margin: 4vw;
     border: 2px solid white;
@@ -64,6 +64,7 @@ body {
     text-align: center;
     border-radius: 2px;
     align-items: center;
+    transition: .75s ease-in-out;
 }
 
 .box p {
@@ -116,11 +117,6 @@ body {
         display: none;
     }
     
-.fb, .yt, .twitter, .github, .homepg {
-    background-color: pink;
-    transition: .75s ease-in-out;
-}
-
 .fb img, .twitter img, .yt img, .github img, .homepg img {
     height: 60px;
     display: inline-block;
@@ -142,7 +138,6 @@ body {
 /*------------------------------------Hovers-------------------------------------*/
 
 .box:hover {
-    transition: .75s ease;
     width: 200px;
 }
 
@@ -232,10 +227,12 @@ body {
         flex-direction: column;
     }
     .box {
+        height: 0px;
         min-width: 320px;
         display: flex;
         flex-grow: 1;
         border-bottom: 1px solid white;
+        transition: .75s ease;
     }
 }
 /*
@@ -251,14 +248,14 @@ body {
         transform: translateX(0);
     }
 } 
-
+*/
 @media (max-width: 950px) {
     .box:hover{
         height: 200px;
-        width: 100%;
+        transition: .75s ease;
     }
     .box:hover p{
         display: inline-block;
         margin: 100px 0 0 0;
     }
-}*/
+}
