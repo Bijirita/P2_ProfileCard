@@ -38,8 +38,6 @@ body {
 }
 
 .profilecard {
-    overflow: hidden;
-    position: relative;
     display: grid;
     grid-template-columns: 70% 30%;
     height: 320px;
@@ -52,15 +50,8 @@ body {
     box-shadow: 5px 5px rgba(0, 0, 0, .2);
 }
 
-.profilecard>:last-child{
-    background: url("../Images/neko.jpg");
-    background-size: 270px 100%;
-    animation: marches 15s linear infinite;
-}
-
 .flexn {
     display: flex;
-    position: relative;
 }
 
 .box {
@@ -75,6 +66,7 @@ body {
 }
 
 .box p {
+    display: flex;
     opacity: 0;
     margin: 0 auto;
     font-size: 20px;
@@ -82,7 +74,7 @@ body {
 }
 
 .box img {
-    border-radius: 30%;
+    border-radius: 50%;
 }
 
 .github p {
@@ -94,6 +86,9 @@ body {
     font-size: 50px;
     top: 0;
     right: 0;
+    background: url("../Images/neko.jpg");
+    background-size: 270px 100%;
+    animation: marches 15s linear infinite;
 }
 
 .charlerae p {
@@ -236,10 +231,8 @@ body {
     .flexn {
         display: flex;
     }
-    .box {
-        position: relative; 
-        width: 100px;
-        flex-wrap: wrap;
+    .box { 
+        display: flex;
         flex-grow: 1;
         border-bottom: 1px solid white;
     }
