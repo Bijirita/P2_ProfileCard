@@ -54,7 +54,6 @@ body {
 .flexn {
     display: flex;
     flex-wrap: wrap;
-    transition: .4s linear;
 }
 
 .box {
@@ -97,23 +96,21 @@ body {
 }
 
 .charlerae p {
-     display: inline-block;
+     color: green;
+     width: 250px;
      text-align: center;
-     margin: 0 0 0 50%;
-     transform: translateX(-50%);
-     color: black;
-     background: rgba(255, 255, 255, .4);
-     opacity: 0;
+     font-size: 50px;
+     display: inline-block;
+     margin: 0 10% 0 5%;
+     background: rgba(255, 255, 255, .7);
+     border-radius: 50%;
 }
 
 .cri img{
     height: 100px;
-    margin: 50px 10% 10% 10%;
     border-radius: 50%;
     border: 2px solid black;
-    box-shadow: 5px 5px rgba(0, 0, 0, .1);
-    position: absolute;
-    opacity: 1;
+    margin: 0 auto;
 }
 
 .yt img {
