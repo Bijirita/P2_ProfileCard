@@ -92,7 +92,7 @@ body {
     background: url("../Images/neko.jpg");
     background-size: 270px 100%;
     animation: marches 15s linear infinite;
-    box-shadow: inset 2px 0px 5px rgba(255, 255, 255, .5), inset -2px 0px 5px rgba(255, 255, 255, .5);
+    box-shadow: inset 3px 0px 5px rgba(255, 255, 255, .5), inset -3px 0px 5px rgba(255, 255, 255, .5);
 }
 
 .charlerae p {
@@ -109,18 +109,11 @@ body {
 .cri img{
     height: 100px;
     border-radius: 50%;
-    border: 2px solid black;
     margin: 0 auto;
 }
-
-.yt img {
-        height: 40px;
-        display: none;
-    }
     
 .fb img, .twitter img, .yt img, .github img, .homepg img {
     height: 60px;
-    display: inline-block;
     position: absolute;
     margin: -100px 0 0 50%;
     transform: translateX(-50%);
@@ -235,6 +228,15 @@ body {
         flex-grow: 1;
         border-bottom: 1px solid white;
         transition: .75s ease;
+    }
+    .fb img, .twitter img, .yt img, .github img, .homepg img {
+        height: 60px;
+        /* display: inline-block; */
+        /* position: absolute; */
+        margin: 0 auto;
+        /* transform: translateX(-50%); */
+        opacity: 0;
+        transition: opacity 1s .75s;
     }
 }
 /*
