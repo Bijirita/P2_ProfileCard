@@ -90,7 +90,7 @@ body {
     background: url("../Images/neko.jpg");
     background-size: 270px 100%;
     animation: marches 15s linear infinite;
-    box-shadow: inset 10px 10px 10px rgb(145, 31, 31);/* , inset 0px 0px 10px 10px black;  */
+    box-shadow: inset 4px 0px 5px rgba(0, 0, 0, .5), inset -4px 0px 5px rgba(0, 0, 0, .5);
 }
 
 .charlerae p {
