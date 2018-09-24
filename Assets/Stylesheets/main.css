@@ -53,7 +53,6 @@ body {
 
 .flexn {
     display: flex;
-    flex-wrap: wrap;
 }
 
 .box {
@@ -66,8 +65,7 @@ body {
     text-align: center;
     border-radius: 2px;
     align-items: center;
-    
-    transition: .75s ease-in-out;
+    transition: .75s ease-in-out; 
     box-shadow: inset 2px 0px 5px rgba(255, 255, 255, .3), inset -2px 0px 5px rgba(255, 255, 255, .3);
 }
 
@@ -76,13 +74,15 @@ body {
     opacity: 0; 
     font-size: 20px;
     font-family: "Gamja Flower", cursive, Helvetica;
+    transition: .75s ease-in-out;
 }
 
 .box img {
+    position: absolute;
     border-radius: 50%;
     height: 60px;
-    opacity: 1;
-    transition: opacity 1s .75s;
+    opacity: 0;
+    transition: opacity .75s ease; 
 }
 
 .github p {
@@ -139,7 +139,6 @@ body {
 .box:hover img {
     opacity: 1;
     margin: -100px 0 0 -10%;
-    animation: minimize 2s 1s forwards ease;
 }
 
 .box:hover .fab {
@@ -165,7 +164,6 @@ body {
 }
 
 .twitter:hover img {
-    display: block;
     animation: maximize 1s .75s ease, alternating .75s 1.5s ease alternate infinite;
 }
 
@@ -175,7 +173,6 @@ body {
 }
 
 .yt:hover img {
-    display: block;
     animation: maximize 1s .75s ease, alternating .75s 1.5s ease alternate infinite;
 }
 
@@ -185,7 +182,6 @@ body {
 }
 
 .github:hover img {
-    display: block;
     animation: maximize 1s .75s ease, alternating .75s 1.5s ease alternate infinite;
 }
 
@@ -195,14 +191,12 @@ body {
 }
 
 .homepg:hover img {
-    display: block;
     animation: maximize 1s .75s ease, alternating .75s 1.5s ease alternate infinite;
 }
 
-.charlerae:hover ~ .cri img {
-    opacity: 1;
-    animation: maximize 1s .75s ease, alternating .75s 1.5s ease alternate infinite;
-}
+/* .charlerae:hover ~ .cri img { 
+    make it spin L and R.
+}*/
 
 /*------------------------------------@media-------------------------------------*/
 
@@ -225,34 +219,20 @@ body {
         border-bottom: 1px solid white;
         transition: .75s ease;
     }
-    .fb img, .twitter img, .yt img, .github img, .homepg img {
-        height: 60px;
-        /* display: inline-block; */
-        /* position: absolute; */
-        margin: 0 auto;
-        /* transform: translateX(-50%); */
-        opacity: 0;
+    .box img {
         transition: opacity 1s .75s;
     }
 }
-/*
-@media (max-width: 950px) {
-    .charlerae {
-        display: inline-block;
-        align-items: center;
-        justify-content: center;
-    }
-    .charlerae img {
-        margin-top: 0;
-        margin-left: 0;
-        transform: translateX(0);
-    }
-} 
-*/
+/*-------------------------@mediahovers-------------------------*/ 
+
 @media (max-width: 950px) {
     .box:hover{
         height: 100px;
         transition: .75s ease;
+    }
+    .box:hover img {
+        opacity: 1;
+        margin: -50px 0 0 -10%;
     }
     .box:hover p{
         display: inline-block;
